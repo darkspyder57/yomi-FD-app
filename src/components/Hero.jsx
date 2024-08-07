@@ -1,9 +1,20 @@
 "use client"
 
+import { useRouter } from "next/navigation";
+
 export default function Hero() {
+    const router = useRouter();
+
+    const handleOrderFoodClick = () => {
+        router.push('/orderonline');
+    };
+
+    const handleMakeReservationClick = () => {
+        router.push('/dining');
+    };
+
     return (
         <main id="hero-section" className="hero" style={{ backgroundImage: `url(${'assets/img/hero-bg-2.jpg'})`, backgroundSize: 'cover' }}>
-
             {/* <!-- hero content --> */}
             <div className="hero-content">
                 <h1 className="hero-heading">Eat the best</h1>
@@ -15,11 +26,11 @@ export default function Hero() {
                 </div>
 
                 <div className="hero-action-btn-container">
-                    <button className="btn">Order Food</button>
+                    <button className="btn" onClick={handleOrderFoodClick}>Order Food</button>
                     <p className="or">or</p>
-                    <button className="btn transparent">Make reservation</button>
+                    <button className="btn transparent" onClick={handleMakeReservationClick}>Make reservation</button>
                 </div>
             </div>
         </main>
-    )
+    );
 }

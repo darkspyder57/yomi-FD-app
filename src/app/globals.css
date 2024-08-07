@@ -133,7 +133,7 @@ body {
 }
 
 .cart:hover {
-  background: rgb(162, 162, 164);
+  background: rgba(211, 211, 215, 0.5);
 }
 
 .menu-icon {
@@ -156,6 +156,10 @@ body {
     border: 1.5px solid rgba(255, 255, 255, 0.18);
   }
 
+  .links:hover {
+    color: blue;
+  }
+
   .links-container.active {
     display: flex;
   }
@@ -165,8 +169,33 @@ body {
     text-align: center;
   }
 
-  .menu-icon {
+  .link-items{
     display: block;
+  }
+
+  .search-box{
+    font-size: 10px;
+    padding-right: 1rem;
+  }
+
+  .search-btn{
+    width: 1rem;
+  }
+
+  .menu-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: .5s;
+  }
+
+  .menu-icon:hover{
+    background: rgba(211, 211, 215, 0.5);
   }
 }
 
