@@ -1,7 +1,7 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faBars, faMagnifyingGlass, faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faMagnifyingGlass, faCartShopping, faTimes } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faBars, faMagnifyingGlass, faCartShopping);
+library.add(faBars, faMagnifyingGlass, faCartShopping, faTimes);
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
