@@ -1,3 +1,27 @@
+# Description of the application:
+This is Yom!, a food delivery application just like others in the market, I tried to add all the functionality except for the food tracking system. Might add later 😅.
+Find it @ (https://yomi.vercel.app/)
+
+## Screenshots of the application:
+### Hero Section
+![yomi-hero](https://github.com/user-attachments/assets/db700f59-9824-44af-b76b-f6552e45b36c)
+
+
+### Order Section
+![yomi-order](https://github.com/user-attachments/assets/9f6223d4-5f2b-4141-948a-c2d5fcbc6487)
+
+
+### Order Online
+![yomi-order-online](https://github.com/user-attachments/assets/92080b62-516c-4046-83f6-f526504e1100)
+
+
+### Dining
+![yomi-dining](https://github.com/user-attachments/assets/3a14d539-e5ec-4bdf-81e0-81772e052cbb)
+
+
+# you can use the template if you need ... it's totally free
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
