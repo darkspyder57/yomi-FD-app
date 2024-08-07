@@ -1,3 +1,11 @@
+# Description of the application:
+This is Yom!, a food delivery application just like others in the market, I tried to add all the functionality except for the food tracking system. Might add later 😅.
+
+## Screenshots of the application:
+
+![yomi-hero](https://github.com/user-attachments/assets/db700f59-9824-44af-b76b-f6552e45b36c)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
