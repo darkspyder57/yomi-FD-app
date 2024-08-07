@@ -173,12 +173,14 @@ body {
 
   .link-items{
     display: block;
-    transition: .25s;
+    transition: all .25s;
   }
 
   .link-items:hover{
     background: rgb(189, 226, 26);
     color: white;
+    text-decoration: none;
+    border-radius: 20px;
   }
 
   .search-box{
@@ -380,10 +382,12 @@ body {
 
 .img-container {
   cursor: pointer;
+  transition: transform 0.15s;
 }
 
 .img-container:hover {
-  border-image: fill 0 linear-gradient(#0001, #000);
+  transform: translateY(-15px);
+  box-shadow: 1px 2px 5px red;
 }
 
 /* Media Queries */
