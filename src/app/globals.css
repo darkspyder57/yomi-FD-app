@@ -150,14 +150,16 @@ body {
     position: absolute;
     top: 4rem;
     left: 0;
+    right: 5;
     width: 100%;
     background: white;
     box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
     border: 1.5px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
   }
 
   .links:hover {
-    color: blue;
+    color: rgb(255, 255, 255);
   }
 
   .links-container.active {
@@ -171,6 +173,12 @@ body {
 
   .link-items{
     display: block;
+    transition: .25s;
+  }
+
+  .link-items:hover{
+    background: rgb(189, 226, 26);
+    color: white;
   }
 
   .search-box{
@@ -194,20 +202,17 @@ body {
     transition: .5s;
   }
 
-  .menu-icon:hover{
-    background: rgba(211, 211, 215, 0.5);
-  }
 }
 
 
 
 /* hero section */
 
-.hero{
+.hero {
   border-image: fill 2 linear-gradient(#0001, #000);
 }
 
-#hero-section{
+#hero-section {
   min-height: 100vh;
   padding: 0 10vw;
   display: flex;
@@ -216,76 +221,76 @@ body {
   background: var(--accent-color);
 }
 
-.hero-content{
+.hero-content {
   width: 40%;
 }
 
-.hero-heading{
+.hero-heading {
   font-size: 4rem;
   line-height: 5rem;
   font-weight: 700;
   color: white;
 }
 
-.hero-line{
+.hero-line {
   line-height: 2rem;
   opacity: 0.75;
   margin-top: 2rem;
   color: aliceblue;
 }
 
-.search.location{
+.search.location {
   width: 100%;
   height: 3.5rem;
   border-radius: .2rem;
   margin: 2.5rem 0;
 }
 
-.locate-btn{
+.locate-btn {
   font-size: 1.2rem;
   width: 4rem;
   transition: .5s;
 }
 
-.search.location .search-box{
+.search.location .search-box {
   padding: 1rem 1.5rem;
 }
 
-.hero-action-btn-container{
+.hero-action-btn-container {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-.or{
+.or {
   color: white;
 }
 
-.btn{
+.btn {
   padding: 1rem 1.5rem;
   border: none;
   border-radius: .3rem;
   font-size: 1rem;
   color: rgb(0, 0, 0);
-  background-color: rgba(217, 218, 120, 0.824)  ;
+  background-color: rgba(217, 218, 120, 0.824);
   text-transform: capitalize;
   cursor: pointer;
   transition: background-color 0.15s;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: yellow;
   color: black;
 }
 
-.btn.transparent{
+.btn.transparent {
   background: transparent;
   border: .1rem solid rgb(255, 255, 255);
   color: white;
   transition: background-color 0.15s;
 }
 
-.btn.transparent:hover{
+.btn.transparent:hover {
   background-color: black;
   color: white;
 }
@@ -294,9 +299,72 @@ body {
   color: var(--secondary-text-color);
 }
 
+/* Media Queries */
+
+@media (max-width: 1024px) {
+  #hero-section {
+    padding: 0 5vw;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-heading {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .hero-line {
+    line-height: 1.5rem;
+  }
+
+  .search.location {
+    margin: 2rem 0;
+  }
+
+  .hero-action-btn-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-heading {
+    font-size: 4rem;
+    line-height: 15rem;
+  }
+
+  .hero-line {
+    font-size: 0.875rem;
+  }
+
+  .search.location {
+    height: 3rem;
+  }
+
+  .locate-btn {
+    width: 3rem;
+  }
+
+  .btn {
+    font-size: 0.875rem;
+    padding: 0.75rem 1rem;
+  }
+}
+
+
 /*order-section*/
 
-#order{
+#order {
   min-height: 100vh;
   padding: 0 10vw;
   display: flex;
@@ -306,17 +374,73 @@ body {
   background-size: cover;
 }
 
-.order-title{
+.order-title {
   text-shadow: 1px 2px 3px rgb(52, 51, 51);
 }
 
-.img-container{
+.img-container {
   cursor: pointer;
 }
 
-.img-container:hover{
+.img-container:hover {
   border-image: fill 0 linear-gradient(#0001, #000);
 }
+
+/* Media Queries */
+
+/* For tablets and smaller laptops */
+@media (max-width: 1024px) {
+  #order {
+    padding: 0 5vw;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .order-title {
+    font-size: 5rem;
+  }
+
+  .img-container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .flex {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .space-x-10 {
+    gap: 2rem;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 640px) {
+  #order {
+    padding: 0 10vw;
+    display: block;
+  }
+
+  .order-title {
+    font-size: 3rem;
+  }
+
+  .img-container {
+    width: 100%;
+  }
+
+  .space-x-10 {
+    gap: 1rem;
+  }
+
+  .text-7xl {
+    font-size: 2.5rem;
+  }
+}
+
+
+/*Footer*/
 
 #footer{
   min-height: 50vh;
@@ -327,6 +451,61 @@ body {
   background-color: white;
 }
 
+/* Add this to your global CSS file or in a style block */
+@media (max-width: 640px) {
+  #footer .logo {
+      width: 200px; /* Adjust the logo size for smaller screens */
+  }
+
+  #footer .container {
+      padding: 0 1rem; /* Add padding for smaller screens */
+  }
+
+  #footer .flex {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #footer .space-x-4 {
+      margin-bottom: 0.5rem;
+  }
+
+  #footer .space-y-4 {
+      margin-bottom: 0.5rem;
+  }
+
+  #footer a {
+      display: block;
+      margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  #footer .logo {
+      width: 250px; /* Adjust the logo size for medium screens */
+  }
+
+  #footer .flex {
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  #footer a {
+      margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  #footer .logo {
+      width: 300px; /* Full size logo for larger screens */
+  }
+
+  #footer .flex {
+      flex-direction: row;
+  }
+}
+
+
 /*Dining*/
 .dining__title{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -335,7 +514,7 @@ body {
 
 .dining__content__item{
   cursor: pointer;
-  transition: color 0.15s;
+  transition: 0.15s;
 }
 
 .dining__content__item:hover{
@@ -356,6 +535,11 @@ body {
 }
 
 /*order-online*/
+
+.food-item{
+  transition: 0.15s;
+}
+
 .food-item:hover{
   border-image: fill 0 linear-gradient(#0001, #000);
   color: azure;
